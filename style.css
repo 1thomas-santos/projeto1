@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair Display:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    font-family: 'Playfair Display', sans-serif;
+}
+
+
+/* Estilos base comuns para todos os dispositivos */
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    background-image: linear-gradient(rgba(2, 2, 2, 0.75), rgba(0, 0, 0, 0.75)), url(bruninhosite.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    background-attachment: fixed;
+
+}
+
+.social-nav {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    background-color: transparent;
+    /* Cor de fundo do menu */
+    padding: 0px;
+
+
+    /* Certifique-se de que o menu fique sobre o conteúdo */
+}
+
+.social-nav a {
+    display: inline-block;
+    text-decoration: none;
+    /* Cor dos ícones */
+    margin-right: 10px;
+    /* Espaçamento entre os ícones */
+    font-size: 40px;
+    /* Tamanho dos ícones */
+    justify-content: center;
+    margin: 15px;
+
+}
+
+.fa-whatsapp {
+    color: #0af316;
+}
+
+.fa-instagram {
+    color: #e4405f;
+}
+
+.content {
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+    color: #fff;
+
+}
+
+.content h1 {
+    font-size: 60px;
+    margin-top: 80px;
+}
+
+.content p {
+    margin: 20px auto;
+    font: weight 100px;
+    line-height: 25px;
+}
+
+.content p span {
+    color: #f2ff02;
+    font-weight: 900;
+    text-transform: uppercase;
+
+}
+
+
+.image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0;
+    /* Espaçamento entre as imagens e o conteúdo abaixo */
+}
+
+.image-wrapper {
+    text-align: center;
+    margin: 0 10px;
+    /* Espaçamento horizontal entre as imagens */
+}
+
+.image-wrapper p {
+    color: #fafafa;
+    font-weight: 600;
+    text-decoration: #fff solid;
+}
+
+img {
+    max-width: 50%;
+    /* As imagens ocuparão a largura disponível */
+    height: auto;
+    display: block;
+    /* Remova possíveis espaços em branco abaixo das imagens */
+    margin: 0 auto;
+    /* Centralize horizontalmente as imagens */
+    border-radius: 25px;
+    border: 10px solid rgb(196, 224, 9);
+
+}
+
+
+
+
+
+@media (max-width: 768px) {
+
+
+    .social-nav a {
+        margin-top: 20%;
+    }
+
+
+
+    .content h1 {
+        font-size: 35px;
+    }
+
+    .content h1 {
+        font-size: 28px;
+
+        margin-top: 300px;
+    }
+
+    .content p {
+        padding: 0 30px;
+        max-width: 470px;
+        margin-top: 20%;
+        font-size: 16px;
+    }
+
+
+    img {
+        margin-top: 50px;
+    }
+
+    .image-wrapper p {
+        margin-bottom: 100%;
+        font-size: 14px;
+    }
+
+}
