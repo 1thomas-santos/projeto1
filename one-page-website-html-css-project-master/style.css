@@ -28,6 +28,7 @@ img {
 	height: 100%;
 	width: 100%;
 	object-fit: cover;
+	border-radius: 20px;
 }
 
 p {
@@ -343,6 +344,7 @@ p {
 	position: relative;
 	z-index: 1;
 	overflow: hidden;
+	transition: transform 0.3s;
 }
 
 #services .service-item::after {
@@ -355,6 +357,10 @@ p {
 	background-image: linear-gradient(60deg, #29323c 0%, #e20d1b 100%);
 	opacity: 0.9;
 	z-index: -1;
+}
+
+#services .service-item:hover {
+    transform: scale(1.05);
 }
 
 #services .service-bottom .icon {
@@ -453,6 +459,10 @@ p {
 	letter-spacing: 0.1rem;
 	margin-top: 10px;
 	margin-bottom: 10px;
+}
+
+.social-buttons {
+	display: flex;
 }
 
 .social-buttons a {
