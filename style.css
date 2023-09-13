@@ -367,6 +367,8 @@ p {
 	height: 100px;
 	width: 100px;
 	margin-bottom: 20px;
+	display: flex;
+    align-self: center;
 
 }
 
